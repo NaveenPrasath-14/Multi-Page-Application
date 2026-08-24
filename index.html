@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>BUCKS SAUCE</title>
+
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="icon" type="image/css" href="./images/favicon.png">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+	<!-- HEADER 1 -->
+    <header class="bucks-header-main">
+        <div class="container-fluid px-3 px-lg-4">
+            <div class="row align-items-start justify-content-between">
+
+                <!-- LOGO -->
+                <div class="col-auto p-0">
+                    <a href="index.html">
+                        <img src="./images/full-logo.svg" class="bucks-main-logo" alt="Bucks Sauce">
+                    </a>
+                </div>
+
+                <!-- MAIN NAVIGATION -->
+                <div class="col-auto p-0">
+                    <nav class="bucks-main-nav">
+                        <a href="shop.html">SHOP</a>
+                        <a href="wholesale.html">WHOLESALE</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="contact.html">CONTACT</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="#" onclick="od1()">CART (0)</a>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- HEADER 2 -->
+    <header class="bucks-header-scroll">
+        <div class="container-fluid px-3 px-lg-4">
+            <div class="row align-items-center justify-content-between">
+
+                <!-- SMALL LOGO -->
+                <div class="col-auto p-0">
+                    <a href="index.html">
+                        <img src="./images/logo.svg" class="bucks-scroll-logo" alt="Bucks Sauce">
+                    </a>
+                </div>
+
+                <!-- SCROLL NAVIGATION -->
+                <nav class="col-auto p-0">
+                    <div class="bucks-scroll-nav">
+
+                        <!-- GET SAUCE -->
+                        <a href="shop.html">
+                        <button class="bucks-get-sauce">GET SAUCE</button></a>
+
+                        <!-- CART -->
+                        <button class="bucks-cart">
+                            <i class="bi bi-basket2" 
+                            onclick="od1()"></i>
+                        </button>
+
+                        <!-- MENU -->
+                        <button class="bucks-menu" 
+                        onclick="open1()">
+                            <span></span>
+                            <span></span>
+                        </button>
+                        
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+                <!--sider-->
+                  <div id="sider">
+                            <div class="items">
+                              <a href="shop.html">SHOP</a>
+                              <a href="wholesale.html">WHOLESALE</a>
+                              <a href="about.html">ABOUT</a>
+                              <a href="contact.html">CONTACT</a>
+                              <a href="faq.html">FAQ</a>
+                              <a href="#" onclick="od1()">CART (0)</a>
+                           </div>
+                           <i class="bi bi-x" onclick="close1()"></i>
+                           <div class="sider-social">
+                             <a href="#">
+                               <i class="bi bi-instagram"></i>
+                             </a>
+
+                            <a href="#">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                          </div>
+                </div>
+
+                <!--cart box-->
+                     <div id="cartbox">
+                            <img src="./images/plainpbottle"
+                            class="plain-b"
+                            alt="plainpbottle">
+                            <h3>YOUR BOTTLE IS...</h3>
+                            <h1>EMPTY</h1>
+                            <button class="asome">ADD SOME SAUCE</button>
+                            <i class="bi bi-x" onclick="cd1()"></i>
+                        </div>
+
+
+             
+    <!--hero-->
+    <section class="hero-section">
+    	<div class="container">
+
+    		<!--BIGTEXT-->
+    		<div class="bigtext">
+    			<img src="./images/bigtext.png"
+    			alt="bigtext">
+    		</div>
+
+    		<!--PTEXT-->
+    		<div class="ptext">
+    			<p class="product-number">PRODUCT NO.01</p>
+    			<p class="product-name">CRUSHED PINEAPPLE SRIRACHA</p>
+    		</div>
+
+    		<!--PRODUCT-->
+    		<div class="productfirst">
+    			<!--GOLD CIRCLE-->
+    			<div class="circle"></div>
+
+    			<!--PINEBOTTLE-->
+    			<div class="bottle">
+    				<img src="./images/pinebottle"
+    				alt="pinebottle">
+    			</div>
+                <div class="bottle-two">
+                    <img src="./images/garlicbottle"
+                    alt="garlicbottle">
+                </div>
+                <div class="bottle-three">
+                    <img src="./images/cherrygarbottle"
+                    alt="cherrygarbottle">
+                </div>
+
+    			
+                <!-- PRODUCT IMAGES -->
+
+            <!-- PINEAPPLE -->
+
+            <img src="./images/pineapplefull"
+               class="product-image pineapple-left"
+               alt="Pineapple">
+
+            <img src="./images/pineapplehalf"
+               class="product-image pineapple-right"
+               alt="Pineapple">
+
+
+           <!-- GARLIC -->
+
+           <img src="./images/garlicmalli"
+               class="product-image garlic-left"
+               alt="Garlic">
+
+            <img src="./images/ulchilly"
+                class="product-image garlic-right"
+                alt="Garlic">
+
+
+            <!-- CHERRY -->
+
+            <img src="./images/broundchilly"
+               class="product-image cherry-left"
+               alt="Cherry">
+
+            <img src="./images/malligarlic"
+               class="product-image cherry-right"
+               alt="Cherry">  
+
+        <!-- PRODUCT CHARACTER -->
+
+             <img src="./images/gif1.gif"
+                class="product-character character-one"
+                alt="Product character">
+
+             <img src="./images/gif2.gif"
+                class="product-character character-two"
+                alt="Product character">
+
+            <img src="./images/gif3.gif"
+               class="product-character character-three"
+               alt="Product character">
+
+    	</div>
+
+    		<!--LEFT ARROW-->
+    		<button class="productfirst-arrow arrow-left"><i class="bi bi-arrow-left-short"></i></button>
+
+    		<!--RIGHT ARROW-->
+    		<button class="productfirst-arrow arrow-right"><i class="bi bi-arrow-right-short"></i></button>
+        
+    		<!--SHOP NOW-->
+            <a href="shop.html" class="shop-now">
+               SHOP NOW
+            </a>
+          <hr>
+    	</div>
+    </section>
+
+   <!-- NATURAL SECTION -->
+   <section class="natural-section">
+       <div class="container">
+
+         <div class="natural-text">
+           <p>Our BBQ sauces use real, natural stuff like it’s the 1800s. <span class="sauce-emoji">🥗</span> Slap it on anything you grill and act surprised when people think you can
+            <span class="chef-emoji">🧑🏻‍🍳</span>cook.</p>
+            </div>
+
+       </div>
+   </section>
+
+   <!-- INGREDIENT SECTION -->
+
+<section class="ingredients-section">
+
+    <!-- DECORATION ITEMS -->
+
+    <img src="./images/2roundchilly"
+         class="ingredient-decoration decoration-2roundchilly"
+         alt="chilly">
+
+    <img src="./images/malligarlic"
+         class="ingredient-decoration decoration-malligarlic"
+         alt="garlic">
+
+    <img src="./images/tomato"
+         class="ingredient-decoration decoration-tomato"
+         alt="tomato">
+
+    <img src="./images/fullgarlic"
+         class="ingredient-decoration decoration-fullgarlic"
+         alt="garlic">
+
+    <img src="./images/uchilly"
+         class="ingredient-decoration decoration-uchilly"
+         alt="uchilly">
+
+    <img src="./images/chilly"
+         class="ingredient-decoration decoration-chilly"
+         alt="chilly">
+
+    <img src="./images/pineapplefull"
+         class="ingredient-decoration decoration-pineapplefull"
+         alt="pineapplefull">
+
+
+    <!-- INGREDIENT BOX -->
+
+    <div class="ingredients-box">
+        <div class="container">
+
+        <!-- NO CORN SYRUP -->
+
+        <article class="ingredient-item">
+
+            <div class="ingredient-title">
+
+                <span class="dot"></span>
+
+                <span>NO CORN SYRUP</span>
+
+                <span class="dot"></span>
+
+            </div>
+
+            <div class="ingredient-content">
+
+                <div class="ingredient-icon">
+
+                    <img src="./images/no-hfc.svg"
+                         alt="no-hfc">
+
+                </div>
+
+                <p>
+                   Sweet is fine. Sugar-lab sweet is not. So we left the high fructose corn syrup on the bottom shelf where it belongs.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- NO SEED OILS -->
+
+        <article class="ingredient-item">
+
+            <div class="ingredient-title">
+
+                <span class="dot"></span>
+
+                <span>NO SEED OILS</span>
+
+                <span class="dot"></span>
+
+            </div>
+
+            <div class="ingredient-content">
+
+                <div class="ingredient-icon">
+
+                    <img src="./images/no-seed-oils.svg"
+                         alt="no-seed-oils">
+
+                </div>
+
+                <p>
+                    We skip the ultra-processed seed oils and use ingredients that actually belong in food. If it reads like a chemistry project, it’s not in this bottle.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- NO ADDITIVES -->
+
+        <article class="ingredient-item">
+
+            <div class="ingredient-title">
+
+                <span class="dot"></span>
+
+                <span>NO ADDITIVES</span>
+
+                <span class="dot"></span>
+
+            </div>
+
+            <div class="ingredient-content">
+
+                <div class="ingredient-icon">
+
+                    <img src="./images/no-additifs.svg"
+                    alt="no-hfc">
+
+                </div>
+
+                <p>
+                   No preservatives. No artificial nonsense. No “what is that?” ingredients hiding behind words you can’t pronounce.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- GLUTEN FREE -->
+
+        <article class="ingredient-item">
+
+            <div class="ingredient-title">
+
+                <span class="dot"></span>
+
+                <span>GLUTEN FREE</span>
+
+                <span class="dot"></span>
+
+            </div>
+
+            <div class="ingredient-content">
+
+                <div class="ingredient-icon">
+
+                    <img src="./images/gluten-free.svg"
+                         alt="gluten-free">
+
+                </div>
+
+                <p>
+                    No gluten. No thickening tricks. No drama. Just sauce that plays nice with your diet and acts up on the grill.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+</div>
+</section>
+
+<!--WEAPON SECTION-->
+<section class="weapon-section">
+
+    <img src="./images/ornament.png"
+         class="weapon-ornament"
+         alt="weapon-ornament">
+
+    <h2 class="weapon-title">
+        <span>CHOOSE YOUR</span>
+        <strong>WEAPON</strong>
+    </h2>
+
+</section>
+
+<!-- PRODUCT SECTION -->
+
+<section class="weapon-products">
+
+    <div class="container-fluid">
+
+        <div class="row g-3">
+
+
+            <!-- PRODUCT 1 -->
+            <div class="col-lg-4 col-md-6">
+
+                <article class="product-card product-pineapple">
+
+                    <div class="product-border"></div>
+
+                    <div class="product-info">
+
+                        <h2>
+                            CRUSHED<br>
+                            PINEAPPLE<br>
+                            SRIRACHA
+                        </h2>
+
+                        <p>
+                            Pineapple sweetness. Gentle heat.<br>
+                            Perfect balance.
+                        </p>
+
+                    </div>
+
+
+                    <img
+                        src="./images/pinebottle"
+                        class="product-bottle"
+                        alt="Crushed Pineapple Sriracha"
+                    >
+
+
+                    <img
+                        src="./images/logo.svg"
+                        class="product-decoration product-antler"
+                        alt="logo"
+                    >
+
+                    <img
+                        src="./images/pineapplefull"
+                        class="product-decoration product-fruit-left"
+                        alt="pineapplefull"
+                    >
+
+                    <img
+                        src="./images/pineapplehalf"
+                        class="product-decoration product-fruit-right"
+                        alt="pineapplehalf"
+                    >
+
+
+                    <div class="product-actions">
+
+                        <button class="add-cart">
+                            <span>ADD TO CART</span>
+                            <span>$12.00</span>
+                        </button>
+
+                        <button class="view-product">
+                            <span>VIEW PRODUCT</span>
+                            <span class="arrow">↗</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+            <div class="col-lg-4 col-md-6">
+
+                <article class="product-card product-habanero">
+
+                    <div class="product-border"></div>
+
+                    <div class="product-info">
+
+                        <h2>
+                            CRUSHED<br>
+                            HABANERO<br>
+                            GARLIC
+                        </h2>
+
+                        <p>
+                            Habanero Fire. Clean Burn.<br>
+                            No Apologies.
+                        </p>
+
+                    </div>
+
+
+                    <img
+                        src="./images/garlicbottle"
+                        class="product-bottle"
+                        alt="Crushed Habanero Garlic"
+                    >
+
+
+                    <img
+                        src="./images/logo.svg"
+                        class="product-decoration product-antler"
+                        alt="logo"
+                    >
+
+                    <img
+                        src="./images/urchilly"
+                        class="product-decoration product-fruit-left"
+                        alt="urchilly"
+                    >
+
+                    <img
+                        src="./images/ulchilly"
+                        class="product-decoration product-fruit-right"
+                        alt="ulchilly"
+                    >
+
+
+                    <div class="product-actions">
+
+                        <button class="add-cart">
+                            <span>ADD TO CART</span>
+                            <span>$12.00</span>
+                        </button>
+
+                        <button class="view-product">
+                            <span>VIEW PRODUCT</span>
+                            <span class="arrow">↗</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="col-lg-4 col-md-6">
+
+                <article class="product-card product-cherry">
+
+                    <div class="product-border"></div>
+
+                    <div class="product-info">
+
+                        <h2>
+                            CRUSHED<br>
+                            CHERRY<br>
+                            GARLIC
+                        </h2>
+
+                        <p>
+                            Sweet Depth. Savory Backbone.<br>
+                            Cherry with Grit.
+                        </p>
+
+                    </div>
+
+
+                    <img
+                        src="./images/cherrygarbottle"
+                        class="product-bottle"
+                        alt="Crushed Cherry Garlic"
+                    >
+
+
+                    <img
+                        src="./images/logo.svg"
+                        class="product-decoration product-antler"
+                        alt="logo"
+                    >
+
+                    <img
+                        src="./images/2roundchilly"
+                        class="product-decoration product-fruit-left"
+                        alt="2roundchilly"
+                    >
+
+                    <img
+                        src="./images/roundchilly"
+                        class="product-decoration product-fruit-right"
+                        alt="roundchilly"
+                    >
+
+
+                    <div class="product-actions">
+
+                        <button class="add-cart">
+                            <span>ADD TO CART</span>
+                            <span>$12.00</span>
+                        </button>
+
+                        <button class="view-product">
+                            <span>VIEW PRODUCT</span>
+                            <span class="arrow">↗</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- WHY BUCK'S SAUCE -->
+
+<section class="why-section">
+
+    <svg class="why-title" viewBox="0 0 1600 500" preserveAspectRatio="none">
+        <path id="title-curve" d="M40,330 Q800,-80 1560,330" fill="none"/>
+        <text>
+            <textPath href="#title-curve" startOffset="13%">
+                WHY BUCK'S SAUCE
+            </textPath>
+        </text>
+    </svg>
+
+    <p class="why-text">
+        WE MAKE SMALL-BATCH BBQ<br>
+        SAUCE BECAUSE BIG-BATCH<br>
+        TASTES LIKE SADNESS. WE'RE<br>
+        <span>ENDING BORING BBQ.</span>
+    </p>
+
+</section>
+
+<!-- WHY BUCK'S SAUCE SECTION -->
+<section class="why-sauce-section">
+
+    <!-- CARDS -->
+    <div class="sauce-cards">
+
+        <!-- CARD 01 -->
+        <article class="sauce-card card-01">
+            <div class="card-number">01</div>
+            
+            <div class="card-label">
+                <span class="dot"></span>
+                <span>SMALL BATCHES</span>
+                <span class="dot"></span>
+            </div>
+            <p>
+                Small runs. No conveyor belts, just slow simmering,
+                constant taste checks, and Doug hovering like it owes him money.
+            </p>
+        </article>
+
+        <!-- CARD 02 -->
+        <article class="sauce-card card-02">
+            <div class="card-number">02</div>
+            
+            <div class="card-label">
+                <span class="dot"></span>
+                <span>REAL INGREDIENTS</span>
+                <span class="dot"></span>
+            </div>
+            <p>
+                Real fruit. Fresh peppers. No powders. No syrups.
+                No shortcuts. Fruit gets chopped, peppers get sliced,
+                spices get blended by hand.
+            </p>
+        </article>
+
+        <!-- CARD 03 -->
+        <article class="sauce-card card-03">
+            <div class="card-number">03</div>
+           
+            <div class="card-label">
+                <span class="dot"></span>
+                <span>OH, THIS?</span>
+                <span class="dot"></span>
+            </div>
+            <p>
+                Philly Hot Sauce Fest 2026 —
+                “Best Sauce on a Philly Cheesesteak”
+                (2nd Place). Not bad for our first event.
+            </p>
+        </article>
+
+    </div>
+<div class="full-curved-line"></div>
+
+<!---- RIGHT GARLIC WITH GIF ---->
+<div class="garlic-gif-wrap">
+    <img src="./images/malligarlic" class="floating-garlic floating-garlic-right" alt="">
+    <img src="./images/gif1.gif" class="garlic-gif" alt="">
+</div>
+
+</section>
+
+<!---- LABEL BOX SECTION ---->
+<section class="label-box">
+<input type="radio" name="products" id="p1" checked>
+<input type="radio" name="products" id="p2">
+<input type="radio" name="products" id="p3">
+
+<div class="buy-section">
+
+    <div class="left-side">
+
+        <img src="./images/grilsauce" class="food food-1" alt="">
+        <img src="./images/grilchest" class="food food-2" alt="">
+        <img src="./images/bone" class="food food-3" alt="">
+
+    </div>
+
+    <div class="right-side">
+
+        <div class="top-content">
+            <h1>BUY A PACK</h1>
+            <h2>SAVE SOME BUCKS</h2>
+
+            <div class="pack">3 PACK</div>
+        </div>
+
+        <div class="product-cards">
+
+            <div class="product-title">
+                <div class="title title-1">
+                    CRUSHED HABANERO<br>
+                    GARLIC
+                </div>
+
+                <div class="title title-2">
+                    SMOKY CHIPOTLE<br>
+                    GARLIC
+                </div>
+
+                <div class="title title-3">
+                    HOT PEPPER<br>
+                    GARLIC
+                </div>
+            </div>
+
+            <div class="products">
+
+                <img src="./images/pbottleset" class="product product-1" alt="pbottleset">
+                <img src="./images/gbottleset" class="product product-2" alt="gbottleset">
+                <img src="./images/cbottle" class="product product-3" alt="cbottle">
+
+            </div>
+
+            <img src="./images/gif3.gif" class="face-gif" alt="">
+
+            <label for="p3" class="arrows arrow-left">←</label>
+
+            <label for="p2" class="arrows arrow-right arrow-1">→</label>
+            <label for="p3" class="arrows arrow-right arrow-2">→</label>
+            <label for="p1" class="arrows arrow-right arrow-3">→</label>
+
+            <button class="cart cart-1">
+                ADD TO CART
+                <span>$32.00</span>
+            </button>
+
+            <button class="cart cart-2">
+                ADD TO CART
+                <span>$34.00</span>
+            </button>
+
+            <button class="cart cart-3">
+                ADD TO CART
+                <span>$36.00</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+<!---- REVIEWS SECTION ---->
+<section class="reviews-section">
+
+    <div class="reviews-heading">REVIEWS</div>
+
+    <div class="reviews-marquee">
+
+        <div class="reviews-track">
+
+            <article class="review-card">
+                <div class="review-name">KYLE SEIP</div>
+                <div class="review-content">
+                    <div class="quote-mark">“</div>
+                    <h3>I JUST LOVE THE<br>PRODUCT.</h3>
+                    <p>You’re gonna see me use it a lot.<br>(@castiron_kyle)</p>
+                </div>
+            </article>
+
+            <article class="review-card">
+                <div class="review-name">THE HEATBROS</div>
+                <div class="review-content">
+                    <div class="quote-mark">“</div>
+                    <h3>THEY HAVE AMAZING BBQ<br>SAUCE!</h3>
+                    <p>It was absolutely delicious. (@theheatbrosco)</p>
+                </div>
+            </article>
+
+            <article class="review-card">
+                <div class="review-name">CAPTAIN COOKS</div>
+                <div class="review-content">
+                    <div class="quote-mark">“</div>
+                    <h3>THE BEST BBQ SAUCE I'VE<br>HAD IN A VERY LONG<br>TIME.</h3>
+                    <p>It’s how BBQ sauce should taste.<br>(@captaincooksfood)</p>
+                </div>
+            </article>
+
+            <article class="review-card">
+                <div class="review-name">TREY M.</div>
+                <div class="review-content">
+                    <div class="quote-mark">“</div>
+                    <h3>BEST SAUCE I EVER<br>HAD...AND IT'S NOT CLOSE.</h3>
+                    <p>I put it on a Popeyes chicken sandwich which was trash. This made that sandwich amazing.<br>Bucks Sauce for life!</p>
+                </div>
+            </article>
+
+
+            <!-- DUPLICATE FOR SEAMLESS MARQUEE -->
+
+            <article class="review-card">
+                <div class="review-name">KYLE SEIP</div>
+                <div class="review-content">
+                    <div class="quote-mark">“</div>
+                    <h3>I JUST LOVE THE<br>PRODUCT.</h3>
+                    <p>You’re gonna see me use it a lot.<br>(@castiron_kyle)</p>
+                </div>
+            </article>
+
+            <article class="review-card">
+                <div class="review-name">THE HEATBROS</div>
+                <div class="review-content">
+                    <div class="quote-mark">“</div>
+                    <h3>THEY HAVE AMAZING BBQ<br>SAUCE!</h3>
+                    <p>It was absolutely delicious. (@theheatbrosco)</p>
+                </div>
+            </article>
+
+            <article class="review-card">
+                <div class="review-name">CAPTAIN COOKS</div>
+                <div class="review-content">
+                    <div class="quote-mark">“</div>
+                    <h3>THE BEST BBQ SAUCE I'VE<br>HAD IN A VERY LONG<br>TIME.</h3>
+                    <p>It’s how BBQ sauce should taste.<br>(@captaincooksfood)</p>
+                </div>
+            </article>
+
+            <article class="review-card">
+                <div class="review-name">TREY M.</div>
+                <div class="review-content">
+                    <div class="quote-mark">“</div>
+                    <h3>BEST SAUCE I EVER<br>HAD...AND IT'S NOT CLOSE.</h3>
+                    <p>I put it on a Popeyes chicken sandwich which was trash. This made that sandwich amazing.<br>Bucks Sauce for life!</p>
+                </div>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="bucks-footer">
+
+    <div class="footer-main">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+            <img src="./images/full-logo.svg" alt="Bucks Sauce">
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav class="footer-nav">
+            <a href="shop.html">SHOP</a>
+            <a href="wholesale.html">WHOLESALE</a>
+            <a href="about.html">ABOUT</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+
+        <!-- CLUB / NEWSLETTER -->
+        <div class="footer-club">
+
+            <h2>JOIN THE BUCKS CLUB</h2>
+
+            <p>
+                New flavors. Restocks. Fire recipes. Merch drops.
+            </p>
+
+            <form class="footer-form">
+                <input
+                    type="email"
+                    placeholder="Your email..."
+                    aria-label="Email address"
+                >
+
+                <button type="submit" aria-label="Subscribe">
+                    <span>→</span>
+                </button>
+            </form>
+
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-social">
+
+            <a href="#" class="social-box" aria-label="Instagram">
+                <span class="instagram-icon">◎</span>
+            </a>
+
+            <a href="#" class="social-box" aria-label="Facebook">
+                <span class="facebook-icon">f</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026. Bucks Sauce Co. All rights reserved.
+        </p>
+
+        <p>
+            Website by <span>Naveen Prasath</span>
+        </p>
+
+    </div>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="./bucks.js"></script>
+</body>
+</html> 

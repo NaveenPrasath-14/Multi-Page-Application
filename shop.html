@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>SHOP-BUCKS SAUCE</title>
+     
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./shop.css">
+
+	<link rel="icon" type="image/css" href="./images/favicon.png">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+	
+	<!-- HEADER 1 -->
+    <header class="bucks-header-main">
+        <div class="container-fluid px-3 px-lg-4">
+            <div class="row align-items-start justify-content-between">
+
+                <!-- LOGO -->
+                <div class="col-auto p-0">
+                    <a href="index.html">
+                        <img src="./images/full-logo.svg" class="bucks-main-logo" alt="Bucks Sauce">
+                    </a>
+                </div>
+
+                <!-- MAIN NAVIGATION -->
+                <div class="col-auto p-0">
+                    <nav class="bucks-main-nav">
+                        <a href="shop.html">SHOP</a>
+                        <a href="wholesale.html">WHOLESALE</a>
+                        <a href="about.html">ABOUT</a>
+                        <a href="contact.html">CONTACT</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="#" onclick="od1()">CART (0)</a>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- HEADER 2 -->
+    <header class="bucks-header-scroll">
+        <div class="container-fluid px-3 px-lg-4">
+            <div class="row align-items-center justify-content-between">
+
+                <!-- SMALL LOGO -->
+                <div class="col-auto p-0">
+                    <a href="index.html">
+                        <img src="./images/logo.svg" class="bucks-scroll-logo" alt="Bucks Sauce">
+                    </a>
+                </div>
+
+                <!-- SCROLL NAVIGATION -->
+                <nav class="col-auto p-0">
+                    <div class="bucks-scroll-nav">
+
+                        <!-- GET SAUCE -->
+                        <button class="bucks-get-sauce">GET SAUCE</button>
+
+                        <!-- CART -->
+                        <button class="bucks-cart">
+                            <i class="bi bi-basket2" 
+                            onclick="od1()"></i>
+                        </button>
+
+                        <!-- MENU -->
+                        <button class="bucks-menu" 
+                        onclick="open1()">
+                            <span></span>
+                            <span></span>
+                        </button>
+                        
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+                <!--sider-->
+                  <div id="sider">
+                            <div class="items">
+                              <a href="shop.html">SHOP</a>
+                              <a href="wholesale">WHOLESALE</a>
+                              <a href="about.html">ABOUT</a>
+                              <a href="contact.html">CONTACT</a>
+                              <a href="faq.html">FAQ</a>
+                              <a href="#" onclick="od1()">CART (0)</a>
+                           </div>
+                           <i class="bi bi-x" onclick="close1()"></i>
+                           <div class="sider-social">
+                             <a href="#">
+                               <i class="bi bi-instagram"></i>
+                             </a>
+
+                            <a href="#">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                          </div>
+                </div>
+
+                <!--cart box-->
+                     <div id="cartbox">
+                            <img src="./images/plainpbottle"
+                            class="plain-b"
+                            alt="plainpbottle">
+                            <h3>YOUR BOTTLE IS...</h3>
+                            <h1>EMPTY</h1>
+                            <button class="asome">ADD SOME SAUCE</button>
+                            <i class="bi bi-x" onclick="cd1()"></i>
+                        </div>
+     <!-- HERO CONTENT -->
+    <div class="shop-hero-content">
+        <div class="container">
+
+            <h1>
+                SAUCE MADE
+                <span class="tomato-wrap">
+                    <img src="./images/fulltomato.webp" class="hero-tomato" alt="tomato">
+                </span>
+                FROM
+                <br>
+                REAL INGREDIENTS
+            </h1>
+
+            <p>
+                This is where you stop talking about<br>
+                sauce and actually get some.
+            </p>
+
+        </div>
+   
+
+    <!-- INGREDIENTS -->
+    <img src="./images/pineapplefull" class="shop-ingredient pineapple" alt="pineapplefull">
+    <img src="./images/urchilly" class="shop-ingredient cherry" alt="urchilly">
+    <img src="./images/fullgarlic" class="shop-ingredient garlic" alt="fullgarlic">
+
+ </div>
+
+ <!-- PRODUCT SECTION -->
+
+<section class="weapon-products">
+
+    <div class="container-fluid">
+
+        <div class="row g-3">
+
+
+            <!-- PRODUCT 1 -->
+            <div class="col-lg-4 col-md-6">
+
+                <article class="product-card product-pineapple">
+
+                    <div class="product-border"></div>
+
+                    <div class="product-info">
+
+                        <h2>
+                            CRUSHED<br>
+                            PINEAPPLE<br>
+                            SRIRACHA
+                        </h2>
+
+                        <p>
+                            Pineapple sweetness. Gentle heat.<br>
+                            Perfect balance.
+                        </p>
+
+                    </div>
+
+
+                    <img
+                        src="./images/pinebottle"
+                        class="product-bottle"
+                        alt="Crushed Pineapple Sriracha"
+                    >
+
+
+                    <img
+                        src="./images/logo.svg"
+                        class="product-decoration product-antler"
+                        alt="logo"
+                    >
+
+                    <img
+                        src="./images/pineapplefull"
+                        class="product-decoration product-fruit-left"
+                        alt="pineapplefull"
+                    >
+
+                    <img
+                        src="./images/pineapplehalf"
+                        class="product-decoration product-fruit-right"
+                        alt="pineapplehalf"
+                    >
+
+
+                    <div class="product-actions">
+
+                        <button class="add-cart">
+                            <span>ADD TO CART</span>
+                            <span>$12.00</span>
+                        </button>
+
+                        <button class="view-product">
+                            <span>VIEW PRODUCT</span>
+                            <span class="arrow">↗</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- PRODUCT 2 -->
+            <div class="col-lg-4 col-md-6">
+
+                <article class="product-card product-habanero">
+
+                    <div class="product-border"></div>
+
+                    <div class="product-info">
+
+                        <h2>
+                            CRUSHED<br>
+                            HABANERO<br>
+                            GARLIC
+                        </h2>
+
+                        <p>
+                            Habanero Fire. Clean Burn.<br>
+                            No Apologies.
+                        </p>
+
+                    </div>
+
+
+                    <img
+                        src="./images/garlicbottle"
+                        class="product-bottle"
+                        alt="Crushed Habanero Garlic"
+                    >
+
+
+                    <img
+                        src="./images/logo.svg"
+                        class="product-decoration product-antler"
+                        alt="logo"
+                    >
+
+                    <img
+                        src="./images/urchilly"
+                        class="product-decoration product-fruit-left"
+                        alt="urchilly"
+                    >
+
+                    <img
+                        src="./images/ulchilly"
+                        class="product-decoration product-fruit-right"
+                        alt="ulchilly"
+                    >
+
+
+                    <div class="product-actions">
+
+                        <button class="add-cart">
+                            <span>ADD TO CART</span>
+                            <span>$12.00</span>
+                        </button>
+
+                        <button class="view-product">
+                            <span>VIEW PRODUCT</span>
+                            <span class="arrow">↗</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- PRODUCT 3 -->
+            <div class="col-lg-4 col-md-6">
+
+                <article class="product-card product-cherry">
+
+                    <div class="product-border"></div>
+
+                    <div class="product-info">
+
+                        <h2>
+                            CRUSHED<br>
+                            CHERRY<br>
+                            GARLIC
+                        </h2>
+
+                        <p>
+                            Sweet Depth. Savory Backbone.<br>
+                            Cherry with Grit.
+                        </p>
+
+                    </div>
+
+
+                    <img
+                        src="./images/cherrygarbottle"
+                        class="product-bottle"
+                        alt="Crushed Cherry Garlic"
+                    >
+
+
+                    <img
+                        src="./images/logo.svg"
+                        class="product-decoration product-antler"
+                        alt="logo"
+                    >
+
+                    <img
+                        src="./images/2roundchilly"
+                        class="product-decoration product-fruit-left"
+                        alt="2roundchilly"
+                    >
+
+                    <img
+                        src="./images/roundchilly"
+                        class="product-decoration product-fruit-right"
+                        alt="roundchilly"
+                    >
+
+
+                    <div class="product-actions">
+
+                        <button class="add-cart">
+                            <span>ADD TO CART</span>
+                            <span>$12.00</span>
+                        </button>
+
+                        <button class="view-product">
+                            <span>VIEW PRODUCT</span>
+                            <span class="arrow">↗</span>
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+ <!--- REAL FOOD SECTION --->
+
+<section class="food-info-section">
+
+    <div class="container-fluid">
+
+        <div class="row g-2">
+
+            <!--- JUST REAL FOOD --->
+
+            <div class="col-lg-4">
+
+                <div class="food-info-card">
+
+                    <h2>JUST REAL FOOD</h2>
+
+                    <p>
+                        Nothing to Google — just real peppers, pineapple,
+                        vinegar, garlic, and spices. Made from scratch in
+                        small batches, not in a factory. And a little Bucks
+                        County attitude.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!--- FEATURES --->
+
+            <div class="col-lg-4">
+
+                <div class="food-info-card features-card">
+
+                    <div class="feature-item">
+
+                        <img
+                            src="./images/no-hfc.svg"
+                            alt="No HFC">
+
+                        <span>
+                            NO<br>
+                            HFC
+                        </span>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <img
+                            src="./images/gluten-free.svg"
+                            alt="Gluten Free">
+
+                        <span>
+                            GLUTEN<br>
+                            FREE
+                        </span>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <img
+                            src="./images/no-additifs.svg"
+                            alt="No Additives">
+
+                        <span>
+                            NO<br>
+                            ADDITIVES
+                        </span>
+
+                    </div>
+
+
+                    <div class="feature-item">
+
+                        <img
+                            src="./images/no-seed-oils.svg"
+                            alt="No Seed Oils">
+
+                        <span>
+                            NO SEED<br>
+                            OILS
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--- PAIRS WITH --->
+
+            <div class="col-lg-4">
+
+                <div class="food-info-card">
+
+                    <h2>PAIRS WITH</h2>
+
+                    <p>
+                        Wings, baby back ribs, pulled pork, BBQ chicken,
+                        pork chops, salmon, burgers, roasted vegetables,
+                        tacos, pizza — and anything that needs more flavor.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section> 
+
+<!--- CHEF SECTION --->
+
+<section class="chef-section">
+
+    <div class="container-fluid">
+
+        <div class="chef-content">
+
+            <!--- CHEF ICON --->
+
+            <img
+                src="./images/logo.svg"
+                class="chef-icon"
+                alt="Bucks Chef">
+
+
+            <!--- SMALL TITLE --->
+
+            <h2>MEET THE CHEF IN</h2>
+
+
+            <!--- BIG TITLE --->
+
+            <h1>ACTION</h1>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CHEF VIDEO SECTION -->
+<section class="chef-video-section">
+
+    <div class="chef-video">
+        <iframe
+            src="https://player.vimeo.com/video/1169753957?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- CENTER PLAY BUTTON -->
+    <button class="video-play">
+        <i class="bi bi-play-fill"></i>
+    </button>
+
+</section>
+
+<!-- ABOUT INTRO SECTION -->
+<section class="about-intro">
+
+    <div class="container about-intro-container">
+
+        <!-- HEART BADGE -->
+        <div class="about-heart-badge">
+
+            <svg class="badge-text" viewBox="0 0 200 200">
+                <defs>
+                    <path
+                        id="badgeCircle"
+                        d="M 100,100
+                           m -72,0
+                           a 72,72 0 1,1 144,0
+                           a 72,72 0 1,1 -144,0"
+                    />
+                </defs>
+
+                <text>
+                    <textPath href="#badgeCircle">
+                        HOMEMADE * SMALL BATCHES * HOMEMADE * SMALL BATCHES *
+                    </textPath>
+                </text>
+            </svg>
+
+            <div class="badge-heart">♥</div>
+
+        </div>
+
+
+        <!-- MAIN TEXT -->
+        <div class="about-intro-content">
+
+            <h2>
+                Every bottle of Bucks Sauce is made<br>
+                with real ingredients, big attitude, and<br>
+                zero patience for bland food.
+            </h2>
+
+            <a href="about.html" class="about-start-btn">
+                HOW IT STARTED
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!---- LABEL BOX SECTION ---->
+<section class="label-box">
+<input type="radio" name="products" id="p1" checked>
+<input type="radio" name="products" id="p2">
+<input type="radio" name="products" id="p3">
+
+<div class="buy-section">
+
+    <div class="left-side">
+
+        <img src="./images/grilsauce" class="food food-1" alt="">
+        <img src="./images/grilchest" class="food food-2" alt="">
+        <img src="./images/bone" class="food food-3" alt="">
+
+    </div>
+
+    <div class="right-side">
+
+        <div class="top-content">
+            <h1>BUY A PACK</h1>
+            <h2>SAVE SOME BUCKS</h2>
+
+            <div class="pack">3 PACK</div>
+        </div>
+
+        <div class="product-cards">
+
+            <div class="product-title">
+                <div class="title title-1">
+                    CRUSHED HABANERO<br>
+                    GARLIC
+                </div>
+
+                <div class="title title-2">
+                    SMOKY CHIPOTLE<br>
+                    GARLIC
+                </div>
+
+                <div class="title title-3">
+                    HOT PEPPER<br>
+                    GARLIC
+                </div>
+            </div>
+
+            <div class="products">
+
+                <img src="./images/pbottleset" class="product product-1" alt="pbottleset">
+                <img src="./images/gbottleset" class="product product-2" alt="gbottleset">
+                <img src="./images/cbottle" class="product product-3" alt="cbottle">
+
+            </div>
+
+            <img src="./images/gif3.gif" class="face-gif" alt="">
+
+            <label for="p3" class="arrows arrow-left">←</label>
+
+            <label for="p2" class="arrows arrow-right arrow-1">→</label>
+            <label for="p3" class="arrows arrow-right arrow-2">→</label>
+            <label for="p1" class="arrows arrow-right arrow-3">→</label>
+
+            <button class="cart cart-1">
+                ADD TO CART
+                <span>$32.00</span>
+            </button>
+
+            <button class="cart cart-2">
+                ADD TO CART
+                <span>$34.00</span>
+            </button>
+
+            <button class="cart cart-3">
+                ADD TO CART
+                <span>$36.00</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="bucks-footer">
+
+    <div class="footer-main">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+            <img src="./images/full-logo.svg" alt="Bucks Sauce">
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav class="footer-nav">
+            <a href="shop.html">SHOP</a>
+            <a href="wholesale.html">WHOLESALE</a>
+            <a href="about.html">ABOUT</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+
+        <!-- CLUB / NEWSLETTER -->
+        <div class="footer-club">
+
+            <h2>JOIN THE BUCKS CLUB</h2>
+
+            <p>
+                New flavors. Restocks. Fire recipes. Merch drops.
+            </p>
+
+            <form class="footer-form">
+                <input
+                    type="email"
+                    placeholder="Your email..."
+                    aria-label="Email address"
+                >
+
+                <button type="submit" aria-label="Subscribe">
+                    <span>→</span>
+                </button>
+            </form>
+
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="footer-social">
+
+            <a href="#" class="social-box" aria-label="Instagram">
+                <span class="instagram-icon">◎</span>
+            </a>
+
+            <a href="#" class="social-box" aria-label="Facebook">
+                <span class="facebook-icon">f</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+
+        <p>
+            © 2026. Bucks Sauce Co. All rights reserved.
+        </p>
+
+        <p>
+            Website by <span>Naveen Prasath</span>
+        </p>
+
+    </div>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<script src="./bucks.js"></script>
+</body>
+</html>
