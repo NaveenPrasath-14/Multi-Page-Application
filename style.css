@@ -1488,25 +1488,25 @@ body {
 
     .ingredient-item:nth-child(1)  {
     position: sticky;
-    top: 12%;
+    top: 10%;
    
 }
 
 .ingredient-item:nth-child(2)  {
     position: sticky;
-    top: 15%;
+    top: 18.5%;
   
 }
 
 .ingredient-item:nth-child(3) {
     position: sticky;
-    top: 20%;
+    top: 26%;
    
 }
 
 .ingredient-item:nth-child(4) {
     position: sticky;
-    top: 30%;
+    top: 38%;
     
 }
 }
