@@ -1276,7 +1276,7 @@ body {
 /*-- CONTENT --*/
 
 .ingredient-content {
-
+    position: relative;
     width: 100%;
     height: 30vw;
     min-height: 400px;
@@ -1488,7 +1488,7 @@ body {
 
     .ingredient-item:nth-child(1)  {
     position: sticky;
-    top: 10%;
+    top: 12%;
    
 }
 
